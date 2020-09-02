@@ -1,0 +1,82 @@
+/* --- General ---*/
+body{
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+}
+img {
+    width: 100%;
+    max-width: 100%;
+}
+ul{
+    list-style-type: none;
+    padding: 0px;
+}
+
+/* --- Trinkets ---*/
+.container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.d-none{
+    display: none;
+}
+
+@media only screen and (min-widh: 1440px){
+    d-lg-block{
+        display: block;
+    }
+    d-lg-none{
+        display: none;
+    }
+}
+
+/* --- Header ---*/
+header{
+    display: flex;
+    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+}
+#burguerMenu{
+    font-size: 28px;
+}
+
+
+main img {
+    max-width: 80%;
+}
+main {
+    background-color: aquamarine;
+}
+
+.fila {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center; 
+}
+
+.mtd {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* --- Footer ---*/
+footer{
+    background-color: indianred;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.col{
+    display: flex;   
+    flex-direction: column;
+    align-items: center;
+}
+footer ul{
+    text-align: center;
+}   
+
