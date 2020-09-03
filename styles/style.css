@@ -14,6 +14,17 @@ ul{
     padding: 0px;
 }
 
+.centrado {
+    text-align: center;
+}
+
+.contenedor {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
 /* --- Trinkets ---*/
 .container {
     padding-left: 1.5rem;
@@ -24,7 +35,7 @@ ul{
 }
 
 @media only screen and (min-widh: 1440px){
-    d-lg-block{
+    d-lg-block {
         display: block;
     }
     d-lg-none{
@@ -45,24 +56,66 @@ nav{
     font-size: 28px;
 }
 
-
-main img {
-    max-width: 80%;
-}
+/* ------ Main ----- */
 main {
     background-color: aquamarine;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .fila {
    display: flex;
    flex-wrap: wrap;
-   align-items: center; 
+   justify-content: space-between;
+   align-items: center;
 }
 
 .mtd {
-    flex: 0 0 100%;
+    flex: 0 0 calc(100% - 1rem);
     max-width: 100%;
 }
+
+.primero {
+    order: 1;
+}
+.segundo {
+    order: 2;
+}
+
+/* ----- Form ---- */
+
+input,
+button {
+    display: block;
+    margin: 0 auto;
+}
+
+/* ----- Medio ------ */
+
+.medio {
+    background-color: lightslategray;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.carta {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+hr {
+    border: none;
+    border-left: 6px solid green;
+    height: 10vh;
+    width: 1px;
+    margin: 0 auto;
+}
+
+/* ----- Comenzar ---- */
+
+
+
 
 /* --- Footer ---*/
 footer{
