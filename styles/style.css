@@ -1,5 +1,5 @@
 /* --- General ---*/
-body{
+body {
     margin: 0px;
 }
 a{
@@ -14,33 +14,16 @@ ul{
     padding: 0px;
 }
 
-.centrado {
-    text-align: center;
-}
-
-.contenedor {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
 /* --- Trinkets ---*/
 .container {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
+.center {
+    text-align: center;
+}
 .d-none{
     display: none;
-}
-
-@media only screen and (min-widh: 1440px){
-    d-lg-block {
-        display: block;
-    }
-    .d-lg-none{
-        display: none;
-    }
 }
 
 /* --- Header ---*/
@@ -56,16 +39,34 @@ nav{
     font-size: 28px;
 }
 
+@media only screen and (min-width: 1200px){
+    header{
+        padding: 2.5rem 10rem 1.5rem 10rem;
+    }
+    .container {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+    .d-lg-block {
+        display: block;
+    }
+    .d-lg-none{
+        display: none;
+    }
+    .lg-left{
+        text-align: left;
+    }
+}
+
 /* ------ Main ----- */
 main {
-    background-color: aquamarine;
-    width: 100%;
-    max-width: 100%;
-    padding: 0 15px;
+    background-color: white;
+    /* padding: 0 15px; */
+    padding-left: 1.5rem;
     margin: 0 auto;
 }
 
-.fila {
+.row {
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
@@ -77,11 +78,54 @@ main {
     max-width: 100%;
 }
 
-.primero {
+.image {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    object-position: left;
+}
+
+.first {
     order: 1;
 }
-.segundo {
+.second {
     order: 2;
+}
+
+@media only screen and (min-width: 1200px){
+
+    main {
+        padding-left: 10rem;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .mtd {
+        flex: 0 0 100%;
+        max-width: 50%;
+        text-align: left;
+    }
+
+    .image{
+        width: 900px;
+        height: 500px;
+        max-width: 50%;
+        object-fit: cover;
+        object-position: left;
+        padding-top: 2rem;
+    }
+
+    .first {
+        order: 2;
+    }
+    .second {
+        order: 1;
+    }
 }
 
 /* ----- Form ---- */
@@ -94,12 +138,12 @@ button {
 
 /* ----- Medio ------ */
 
-.medio {
+.statistics {
     background-color: lightslategray;
     margin-bottom: 10px;
     padding-bottom: 10px;
 }
-.carta {
+.card {
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
@@ -112,6 +156,13 @@ hr {
     margin: 0 auto;
 }
 
+@media only screen and (min-width: 1200px){
+    
+    
+
+}
+
+
 /* --- Boost ---*/
 #boost{
     background-image: url("../images/bg-boost-mobile.svg");
@@ -122,11 +173,6 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-@media only screen and (min-width: 1200px){
-    #boost{
-        background-image: url("../images/bg-boost-desktop.svg");
-    }
 }
 
 /* --- Footer ---*/
@@ -141,7 +187,43 @@ footer{
     flex-direction: column;
     align-items: center;
 }
-footer ul{
-    text-align: center;
-}   
+#lists{
+    display: flex;
+    flex-direction: column;
+}
+#socialLinks{
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+@media only screen and (min-width: 1200px){
+    #boost{
+        background-image: url("../images/bg-boost-desktop.svg");
+    }
+    footer{
+        height: 125px;
+        flex-direction: row;
+    }
+    .col{
+        align-items: flex-start;
+    }
+    #logoFooter{
+        height: 100%;
+        flex-basis: 25%;
+    }
+    #logoFooter img{
+        max-width: 150px;
+    }
+    #lists{
+        flex-direction: row;
+        flex-basis: 60%;
+        justify-content: space-evenly;
+    }
+    #socialLinks{
+        flex-basis: 15%;
+        height: 100%;
+    }
+    #socialLinks img{
+        max-width: 1.5rem;
+    }
+}
