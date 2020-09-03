@@ -38,7 +38,7 @@ ul{
     d-lg-block {
         display: block;
     }
-    d-lg-none{
+    .d-lg-none{
         display: none;
     }
 }
@@ -112,10 +112,22 @@ hr {
     margin: 0 auto;
 }
 
-/* ----- Comenzar ---- */
-
-
-
+/* --- Boost ---*/
+#boost{
+    background-image: url("../images/bg-boost-mobile.svg");
+    background-color: hsl(257, 27%, 26%);
+    background-size: cover;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media only screen and (min-width: 1200px){
+    #boost{
+        background-image: url("../images/bg-boost-desktop.svg");
+    }
+}
 
 /* --- Footer ---*/
 footer{
