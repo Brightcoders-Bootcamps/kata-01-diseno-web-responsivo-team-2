@@ -10,8 +10,11 @@
 
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
+  <!-- Icons from FontAwesome -->
   <script src="https://kit.fontawesome.com/244f8abe50.js" crossorigin="anonymous"></script>
-  <!-- <link rel="stylesheet" href="styles/normalize.css">  -->
+  <!-- Font family from Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 
@@ -37,32 +40,33 @@
     <img class="mtd first image" src="images/illustration-working.svg" alt="">
     <div class="mtd second center">
       <h1>More than just shorter links</h1>
-      <p>
+      <p class="bodycopy">
         Build your brand’s recognition and get detailed insights
         on how your links are performing.
       </p>
-      <a class="cta" href="#">Get Started</a>
+      <a class="cta button" href="#">Get Started</a>
     </div>
   </main>
-  
-  <div class="container statistics center">
-  <div id="shorten" class="card">
-  <form action="">
-    <input type="text" placeholder="Shorten a link here...">
-    <input type="button" type="submit" value="Shorten It!">
-  </form></div></div>
+
+
+  <div id="shorten">
+    <form action="">
+      <input class="shorten_box" type="text" placeholder="Shorten a link here...">
+      <input class="shorten_button button" type="button" type="submit" value="Shorten It!">
+    </form>
+  </div>
 
   <div class="container statistics center">
     <div>
       <h2>Advanced Statistics</h2>
-      <p>
+      <p class="statisticsF">
         Track how your links are performing across the web with our
         advanced statistics dashboard.
       </p>
     </div>
 
-    <div class="middle">
-      <div id="brand" class="card">
+    <div class="middle cards">
+      <div id="brand" class="card flex-card-1">
         <h4>Brand Recognition</h4>
         <p>
           Boost your brand recognition with each click. Generic links don’t
@@ -95,55 +99,55 @@
 
   <div id="boost" class="container centrado">
     <h3>Boost your links today</h3>
-    <a href="#">Get Started</a>
+    <a href="#" class="button">Get Started</a>
   </div>
 
   <footer class="container">
     <div id="logoFooter">
-      <img src="./images/logo.svg" alt="Logo Shortly">
+      <img src="./images/logo-footer.svg" alt="Logo Shortly">
     </div>
 
     <div id="lists">
       <div class="col">
         <span>Features</span>
         <ul class="center lg-left">
-          <li>Link Shortening</li>
-          <li>Branded Links</li>
-          <li>Analytics</li>
+          <a href="#"><li>Link Shortening</li></a>
+          <a href="#"><li>Branded Links</li></a>
+          <a href="#"><li>Analytics</li></a>
         </ul>
       </div>
 
       <div class="col">
         <span>Resources</span>
         <ul class="center lg-left">
-          <li>Blog</li>
-          <li>Developers</li>
-          <li>Support</li>
+          <a href="#"><li>Blog</li></a>
+          <a href="#"><li>Developers</li></a>
+          <a href="#"><li>Support</li></a>
         </ul>
       </div>
 
       <div class="col">
         <span>Company</span>
         <ul class="center lg-left">
-          <li>About</li>
-          <li>Our Team</li>
-          <li>Careers</li>
-          <li>Contact</li>
+          <a href="#"><li>About</li></a>
+          <a href="#"><li>Our Team</li></a>
+          <a href="#"><li>Careers</li></a>
+          <a href="#"><li>Contact</li></a>
         </ul>
       </div>
     </div>
 
     <div id="socialLinks" class="col">
-      <img src="../images/icon-facebook.svg">
-      <img src="../images/icon-twitter.svg">
-      <img src="../images/icon-pinterest.svg">
-      <img src="../images/icon-instagram.svg">
+      <a href="#"><i class="fab fa-facebook-square"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-pinterest"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
     </div>
   </footer>
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 
 </html>

@@ -1,6 +1,9 @@
 /* --- General ---*/
 body {
     margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #BFBFBF;
 }
 a{
     text-decoration: none;
@@ -12,6 +15,68 @@ img {
 ul{
     list-style-type: none;
     padding: 0px;
+}
+
+h1, h2, h3, h4{
+    font-weight: bold;
+    color: #35323E;
+}
+h1{
+    font-size: 42px;
+    letter-spacing: -0.04em;
+}
+h2, h3{
+    font-size: 28px;
+    letter-spacing: -0.02em;
+}
+h3{
+    color: #FFFFFF;
+}
+h4{
+    font-size: 22px;
+}
+.headerF{
+    font-weight: bold;
+    font-size: 18px;
+    color: FFF;
+}
+.bodycopy{
+    font-size: 18px;
+}
+.button{
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #2ACFCF;
+    border: hidden;
+    border-radius: 100px;
+    padding: 1.25rem 2.5rem ;
+}
+.button:hover{
+    background-color: #9BE3E2;
+}
+.statisticsF{
+    font-size: 16px;
+}
+.cards{
+    font-size: 16px;
+    letter-spacing: -0.02em;
+}
+footer span{
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+footer a{
+    color: #FFFFFF;
+}
+footer a:hover{
+    color: #2ACFCF;
+}
+footer li{
+    font-size: 16px;
+    letter-spacing: -0.04em;
 }
 
 /* --- Trinkets ---*/
@@ -26,11 +91,12 @@ ul{
     display: none;
 }
 
+
 /* --- Header ---*/
 header{
     display: flex;
     padding: 2.5rem 1.5rem 1.5rem 1.5rem;
-    justify-content: space-between<
+    justify-content: space-between;
 }
 nav{
     display: flex;
@@ -39,24 +105,6 @@ nav{
     font-size: 28px;
 }
 
-@media only screen and (min-width: 1200px){
-    header{
-        padding: 2.5rem 10rem 1.5rem 10rem;
-    }
-    .container {
-        padding-left: 10rem;
-        padding-right: 10rem;
-    }
-    .d-lg-block {
-        display: block;
-    }
-    .d-lg-none{
-        display: none;
-    }
-    .lg-left{
-        text-align: left;
-    }
-}
 
 /* ------ Main ----- */
 main {
@@ -92,8 +140,156 @@ main {
     order: 2;
 }
 
+
+/* ----- Form ---- */
+
+input, button {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.50rem;
+    width: 300px;
+    border-style: none;
+    height: 50px;
+    font-size: 16px;
+}
+.shorten_box{
+    margin-bottom: 1rem;
+}
+.shorten_button{
+    margin-top: 1rem;
+    vertical-align: center;
+}
+
+
+/* ----- Medio ------ */
+
+.statistics {
+    background-color: hsl(230, 25%, 95%);   
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.card {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+hr {
+    border: none;
+    border-left: 6px solid green;
+    height: 10vh;
+    width: 1px;
+    margin: 0 auto;
+}
+
+/* --- Boost ---*/
+#boost{
+    background-image: url("../images/bg-boost-mobile.svg");
+    background-color: hsl(257, 27%, 26%);
+    background-size: cover;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* --- Shorten ---*/
+#shorten{
+    background-image: url("../images/bg-shorten-mobile.svg");
+    background-color: hsl(257, 27%, 26%);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position:right top;
+    height: 110px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: space-around;
+    margin: 25px;
+
+}
+
+/* --- Footer ---*/
+footer{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #232127;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#logoFooter{
+    padding-bottom: 3rem;
+}
+.col{
+    padding-bottom: 1.5rem;
+    display: flex;   
+    flex-direction: column;
+    align-items: center;
+}
+#lists{
+    display: flex;
+    flex-direction: column;
+}
+#socialLinks{
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0;
+}
+#socialLinks i{
+    font-size: 24px;
+    padding: 0 12px;
+}
+
+
+
+/* --- DESKTOP ---*/
+
 @media only screen and (min-width: 1200px){
 
+    /* --- General ---*/
+    h1{
+        font-size: 82px;
+    }
+    h2, h3{
+        font-size: 40px;
+    }
+    .headerF{
+        font-size: 15px;
+        color: #9E9AA7;
+    }
+    .bodycopy{
+        font-size: 22px;
+    }
+    input{
+        font-size: 20px;
+    }
+    .statisticsF{
+        font-size: 18px;
+    }
+    /* --- Trinkets ---*/
+    .container {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+    .d-lg-block {
+        display: block;
+    }
+    .d-lg-none{
+        display: none;
+    }
+    .lg-left{
+        text-align: left;
+    }
+    /* --- Header ---*/
+    header{
+        padding: 2.5rem 10rem 1.5rem 10rem;
+    }
+    /* --- Main ---*/
     main {
         padding-left: 10rem;
     }
@@ -126,110 +322,56 @@ main {
     .second {
         order: 1;
     }
-}
-
-/* ----- Form ---- */
-
-input,
-button {
-    display: block;
-    margin: 0 auto;
-}
-
-/* ----- Medio ------ */
-
-.statistics {
-    background-color: lightslategray;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-}
-.card {
-    background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    border-radius: 0.25rem;
-}
-hr {
-    border: none;
-    border-left: 6px solid green;
-    height: 10vh;
-    width: 1px;
-    margin: 0 auto;
-}
-
-@media only screen and (min-width: 1200px){
-    
+    /* --- Form ---*/
+    /* --- Medio ---*/
     .middle {
         display: grid;
         grid-template-columns: repeat(3, 1fr) ;
- 
-      
+        grid-gap: 2rem;
+        column-gap: 2rem;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        width: 1150px;
+        height: 500px;
     }
-
     hr {
         display: none;
     }
+/* 
+     .flex-card-1 {
+        display: flex;
+        justify-content: flex-start;
 
-}
+    }  */
 
 
-/* --- Boost ---*/
-#boost{
-    background-image: url("../images/bg-boost-mobile.svg");
-    background-color: hsl(257, 27%, 26%);
-    background-size: cover;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-/* --- shorten ---*/
-#shorten{
-    background-image: url("../images/bg-shorten-mobile.svg");
-    background-color: hsl(257, 27%, 26%);
-    background-size: cover;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* --- Footer ---*/
-footer{
-    background-color: indianred;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.col{
-    display: flex;   
-    flex-direction: column;
-    align-items: center;
-}
-#lists{
-    display: flex;
-    flex-direction: column;
-}
-#socialLinks{
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-@media only screen and (min-width: 1200px){
+    /* --- Boost ---*/
     #boost{
         background-image: url("../images/bg-boost-desktop.svg");
     }
+    /* --- Shorten ---*/
+    #shorten{
+        background-image: url("../images/bg-shorten-desktop.svg");
+        background-size: cover;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    /* --- Footer ---*/
     footer{
-        height: 125px;
+        height: 150px;
         flex-direction: row;
+        padding-top: 4.75rem;
+        padding-bottom: 4.75rem;
     }
     .col{
+        padding-bottom: 0;
         align-items: flex-start;
     }
     #logoFooter{
         height: 100%;
         flex-basis: 25%;
+        padding-bottom: 0;
     }
     #logoFooter img{
         max-width: 150px;
@@ -243,10 +385,7 @@ footer{
         flex-basis: 15%;
         height: 100%;
     }
-    #socialLinks img{
-        max-width: 1.5rem;
-    }
-    #shorten{
-        background-image: url("../images/bg-shorten-desktop.svg");
+    #socialLinks i{
+        padding: 0;
     }
 }
