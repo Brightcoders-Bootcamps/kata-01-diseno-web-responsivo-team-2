@@ -30,7 +30,7 @@ ul{
 header{
     display: flex;
     padding: 2.5rem 1.5rem 1.5rem 1.5rem;
-    justify-content: space-between;
+    justify-content: space-between<
 }
 nav{
     display: flex;
@@ -107,7 +107,7 @@ main {
 
     .mtd {
         flex: 0 0 100%;
-        max-width: 50%;
+        max-width: 45%;
         text-align: left;
     }
 
@@ -158,7 +158,16 @@ hr {
 
 @media only screen and (min-width: 1200px){
     
-    
+    .middle {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) ;
+ 
+      
+    }
+
+    hr {
+        display: none;
+    }
 
 }
 
