@@ -38,7 +38,9 @@ h4{
 .headerF{
     font-weight: bold;
     font-size: 18px;
-    color: FFF;
+}
+header a{
+    color: #FFF;
 }
 .bodycopy{
     font-size: 18px;
@@ -101,12 +103,58 @@ header{
     justify-content: space-between;
 }
 nav{
-    display: flex;
+    flex-basis: 65%;
+}
+nav a{
+    padding: 0 1rem;
+}
+nav a:hover, .login:hover{
+    color: #35323E;
 }
 #burguerMenu{
     font-size: 28px;
 }
+.login{
+    padding: 1.5rem 0 1rem 0;
+}
+.signUp {
+    color: #FFFFFF;
+    background-color: #2ACFCF;
+    border: hidden;
+    border-radius: 100px;
+    padding: .5rem 1.5rem !important;
+}
+.signUp:hover{
+    background-color: #9BE3E2;
+}
 
+#modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 10px;
+    padding: 2.5rem 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    display: none;
+}
+#modal nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#modal hr{
+    color: #BFBFBF;
+    width: 100%;
+}
+#modal a{
+    padding-bottom: 1.5rem;
+}
+#modal .signUp{
+    width: 80%;
+    text-align: center;
+}
 
 /* ------ Main ----- */
 main {
@@ -179,7 +227,7 @@ input, button {
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
 }
-hr {
+.middle hr {
     border: none;
     border-left: 6px solid #2ACFCF;;
     height: 10vh;
@@ -264,7 +312,9 @@ footer{
     }
     .headerF{
         font-size: 15px;
-        color: #9E9AA7;
+    }
+    header a{
+        color: #9E9AA7; 
     }
     .bodycopy{
         font-size: 22px;
@@ -286,12 +336,18 @@ footer{
     .d-lg-none{
         display: none;
     }
+    .d-lg-flex{
+        display: flex;
+    }
     .lg-left{
         text-align: left;
     }
     /* --- Header ---*/
     header{
         padding: 2.5rem 10rem 1.5rem 10rem;
+    }
+    .login{
+        padding-right: 2.375rem;
     }
     /* --- Main ---*/
     main {
@@ -395,7 +451,7 @@ footer{
     .tres {
         align-self: flex-end;
     }
-    hr {
+    .middle hr {
         display: flex;
         align-self: center;
         border: 4px solid #2ACFCF;;

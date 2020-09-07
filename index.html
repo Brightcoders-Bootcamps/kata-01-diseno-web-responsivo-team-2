@@ -19,19 +19,30 @@
 </head>
 
 <body>
-  <header>
+  <header class="headerF">
     <a href="#" id="logoHeader">
       <img src="images/logo.svg" alt="Logo Shortly">
     </a>
     <i id="burguerMenu" class="fas fa-bars d-lg-none"></i>
-    <nav class="d-none d-lg-block">
+    <nav class="d-none d-lg-flex">
       <a href="#">Features</a>
       <a href="#">Pricing</a>
       <a href="#">Resources</a>
     </nav>
     <div class="d-none d-lg-block">
-      <a href="#">Login</a>
-      <a class="cta" href="#">Sign Up</a>
+      <a class="login" href="#">Login</a>
+      <a class="signUp" href="#">Sign Up</a>
+    </div>
+
+    <div id="modal">
+      <nav class="d-none d-lg-flex">
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Resources</a>
+      </nav>
+      <hr>
+      <a class="login" href="#">Login</a>
+      <a class="signUp" href="#">Sign Up</a>
     </div>
   </header>
 
@@ -44,7 +55,7 @@
         Build your brand’s recognition and get detailed insights
         on how your links are performing.
       </p>
-      <a class="cta button" href="#">Get Started</a>
+      <a class="button" href="#">Get Started</a>
     </div>
   </main>
 
