@@ -49,77 +49,81 @@
     </div>
   </header>
 
-
+<div class="principalgrid">
   <section class="gridone">
-  <main class="row">
-    <img class="mtd first image" src="images/illustration-working.svg" alt="">
-    <div class="mtd second center">
-      <h1>More than just shorter links</h1>
-      <p class="bodycopy">
-        Build your brand’s recognition and get detailed insights
-        on how your links are performing.
-      </p>
-      <a class="button button-main" href="#">Get Started</a>
-    </div>
-  </main>
-</section>
+    <main class="row">
+      <img class="mtd first image" src="images/illustration-working.svg" alt="">
+      <div class="mtd second center">
+        <h1>More than just shorter links</h1>
+        <p class="bodycopy">
+          Build your brand’s recognition and get detailed insights
+          on how your links are performing.
+        </p>
+        <a class="button button-main" href="#">Get Started</a>
+      </div>
+    </main>
+  </section>
 
+  <section class="gridform">
   <div id="shorten">
     <form action="">
-      <input class="shorten_box" type="text" placeholder="      Shorten a link here...">
-      <input class="shorten_button button" type="button" type="submit" style=cursor:pointer; value="Shorten It!">
+      <input id="input" class="shorten_box" type="text" placeholder="Shorten a link here...">
+      <input id="shortenIt" class="shorten_button button" type="button" type="submit" style=cursor:pointer; value="Shorten It!">
     </form>
   </div>
-
+</section>
+</section>
   <section class="gridtwo"> 
-  <div class="container statistics center">
-    <div class="space-statistics">
-      <h2>Advanced Statistics</h2>
-      <p class="statisticsF">
-        Track how your links are performing across the web with our
-        advanced statistics dashboard.
-      </p>
+    <div class="container statistics center">
+      <div class="space-statistics">
+        <h2>Advanced Statistics</h2>
+        <p class="statisticsF">
+          Track how your links are performing across the web with our
+          advanced statistics dashboard.
+        </p>
+      </div>
+
+      <div class="middle cards">
+        <div class="card one">
+          <div class="brand img-stat">
+            <img src="images/icon-brand-recognition.svg" alt="Brand Recognition Image">
+          </div>
+          <h4>Brand Recognition</h4>
+          <p>
+            Boost your brand recognition with each click. Generic links don’t
+            mean a thing. Branded links help instil confidence in your content.
+          </p>
+        </div>
+
+        <hr>
+
+        <div class="card two">
+          <div class="detail img-stat">
+            <img src="images/icon-detailed-records.svg" alt="Detailed Records Image">
+          </div>
+          <h4>Detailed Records</h4>
+          <p>
+            Gain insights into who is clicking your links. Knowing when and where
+            people engage with your content helps inform better decisions.
+          </p>
+        </div>
+
+        <hr>
+
+        <div class="card three">
+          <div class="custom img-stat">
+            <img src="images/icon-fully-customizable.svg" alt="Fully Customizable Image">
+          </div>
+          <h4>Fully Customizable</h4>
+          <p>
+            Improve brand awareness and content discoverability through customizable
+            links, supercharging audience engagement.
+          </p>
+        </div>
+      </div>
     </div>
-
-    <div class="middle cards">
-      <div class="card one">
-        <div class="brand img-stat">
-          <img src="images/icon-brand-recognition.svg" alt="Brand Recognition Image">
-        </div>
-        <h4>Brand Recognition</h4>
-        <p>
-          Boost your brand recognition with each click. Generic links don’t
-          mean a thing. Branded links help instil confidence in your content.
-        </p>
-      </div>
-
-      <hr>
-
-      <div class="card two">
-        <div class="detail img-stat">
-          <img src="images/icon-detailed-records.svg" alt="Detailed Records Image">
-        </div>
-        <h4>Detailed Records</h4>
-        <p>
-          Gain insights into who is clicking your links. Knowing when and where
-          people engage with your content helps inform better decisions.
-        </p>
-      </div>
-
-      <hr>
-
-      <div class="card three">
-        <div class="custom img-stat">
-          <img src="images/icon-fully-customizable.svg" alt="Fully Customizable Image">
-        </div>
-        <h4>Fully Customizable</h4>
-        <p>
-          Improve brand awareness and content discoverability through customizable
-          links, supercharging audience engagement.
-        </p>
-      </div>
-    </div>
-  </div>
+  </section>
+</div>
 
   <div id="boost" class="container centrado">
     <h3>Boost your links today</h3>
@@ -192,6 +196,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+  
+  <script src="./scripts/app.js"></script>
   <script src="./scripts/modal.js"></script>
 
 </body>

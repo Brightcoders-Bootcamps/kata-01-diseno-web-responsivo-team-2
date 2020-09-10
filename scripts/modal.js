@@ -1,7 +1,7 @@
 const modal = document.getElementById("modal");
-const button = document.getElementById("burguerMenu");
+const buttonModal = document.getElementById("burguerMenu");
 
-button.onclick = function() {
+buttonModal.onclick = function() {
     modal.style.display = "block";
 }
 
