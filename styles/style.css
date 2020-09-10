@@ -100,7 +100,9 @@ footer li{
 .d-none{
     display: none;
 }
-
+.left{
+    text-align: left !important;
+}
 
 /* --- Header ---*/
 header{
@@ -232,8 +234,31 @@ input, button {
     margin-top: 1rem;
     vertical-align: center;
     border-radius: 0.50rem;
+    padding: .5rem 1rem;
 }
 
+.shortened-card{
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.5rem;
+    padding: 1rem 0;
+    border-radius: 0.50rem;
+}
+.shortened-card hr{
+    width: 99%;
+    color: #BFBFBF;
+    opacity: 25%;
+}
+.m-shortened{
+    margin: 0 1rem;
+}
+.long-link{
+    color: #35323E;
+}
+.short-link{
+    color: #2ACFCF;
+    margin-bottom: .5rem;
+}
 
 /* ----- Medio ------ */
 
@@ -262,7 +287,7 @@ input, button {
 
 .middle hr {
     border: none;
-    border-left: 6px solid #2ACFCF;;
+    border-left: 6px solid #2ACFCF;
     height: 15vh;
     width: 1px;
     margin: 0 auto;
