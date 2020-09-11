@@ -66,6 +66,7 @@ Feel free to use any workflow that you feel comfortable with. Below is a suggest
 
 ## Página web
 https://kata-01-diseno-web-responsivo-team-2.vercel.app/
+(Click in Header Logo to clear links shortened)
   
 ## Evaluación / Revisión
 

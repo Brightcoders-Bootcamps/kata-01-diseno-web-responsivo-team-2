@@ -70,7 +70,7 @@ function callApi() {
 //Function to check if input is empty
 function validate() {
     if(input.value == ""){ 
-        input.classList.add(error);
+        input.classList.add("error");
         label.classList.add("is-visible");
     }
 }
