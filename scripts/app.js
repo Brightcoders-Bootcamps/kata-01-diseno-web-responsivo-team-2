@@ -1,6 +1,8 @@
 const shortener =  document.getElementById("gridtwo");
 const input = document.getElementById("input");
 const button = document.getElementById("shortenIt");
+const label = document.getElementById("labelform");
+const error = "error";
 
 const api_url = 'https://rel.ink/api/links/';
 let LIST = [];
@@ -20,11 +22,21 @@ function addShortLink(long, short) {
     shortener.insertAdjacentHTML(position, item);
     input.value = "";
 }
+function validate(long, short) {
+    if(!long){ 
+        const item = 
+        label.style.visibility="visible";
+        input.classList.add(error);
+        
+    input.value = "";
+    }
 
+}
 button.addEventListener("click", function(event){
     callApi()
         .then(data => addShortLink(input.value, data['hashid']))
         .catch(error => console.error('Error:', error));
+        validate();
 });
 
 function callApi() {

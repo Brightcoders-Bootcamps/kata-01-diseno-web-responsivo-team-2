@@ -225,6 +225,14 @@ main {
 }
 
 /* ----- Form ---- */
+.validate{
+    font-family: 'Poppins', sans-serif !important;
+    font-style: italic;
+}
+.error{
+    border-color:red;
+    color:red;
+}
 
 
 input, button {
