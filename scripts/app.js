@@ -13,7 +13,7 @@ function addShortLink(long, short) {
                     <span class="long-link left m-shortened">${long}</span>
                     <hr>
                     <span class="short-link left m-shortened">https://rel.ink/${short}</span>
-                    <a class="shorten_button button center m-shortened">Copy</a>
+                    <a class="button center m-shortened">Copy</a>
                 </div>`;
     
     const position = "afterbegin";
