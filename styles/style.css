@@ -37,6 +37,9 @@ h3{
 h4{
     font-size: 22px;
 }
+input, button{
+    font-size: 16px;
+}
 .headerF{
     font-weight: bold;
     font-size: 18px;
@@ -61,6 +64,11 @@ header a{
     background-color: #9BE3E2;
     cursor: pointer;
 }
+
+.copy-button:focus {
+    background-color: hsl(257, 27%, 26%);
+}
+
 .statisticsF{
     color: hsl(257, 7%, 63%);
     font-size: 18px;
@@ -225,25 +233,27 @@ main {
 }
 
 /* ----- Form ---- */
-.validate{
-    font-family: 'Poppins', sans-serif !important;
-    font-style: italic;
-}
 .error{
-    border-color:red;
-    color:red;
+    font-family: 'Poppins', sans-serif !important;
+    border: 3px solid red;
+    color: red;
+}
+#labelform{
+    visibility: hidden;
+}
+.is-visible{
+    visibility: visible !important;
 }
 
 
-input, button {
+input,  button {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 85%;
     border-style: none;
-    height: 50px;
-    font-size: 16px;
+    height: 48px;
 }
 .shorten_box{
     margin-bottom: 1rem;
@@ -290,6 +300,8 @@ input, button {
 .short-link{
     color: #2ACFCF;
     margin-bottom: .5rem;
+    background-color: #FFF;
+    border: none;
 }
 
 /* ----- Medio ------ */
@@ -303,6 +315,9 @@ input, button {
 .space-statistics {
     padding-top: 15%;
     margin-bottom: 4rem;
+}
+.space-statistics h2{
+    margin-top: 3rem;
 }
 .card {
     background-color: white;
@@ -346,20 +361,6 @@ input, button {
     height: 40px;
 }
 
-/* .brand {
-    top: 73rem;
-    left: 9.4rem;
-}
-
-.detail {
-    top: 94.7rem;
-    left: 9.4rem;
-}
-
-.custom {
-    top: 116.8rem;
-    left: 9.4rem;
-} */
 
 /* --- Boost ---*/
 #boost{
@@ -585,9 +586,12 @@ footer{
         display: none;
     }
     .copy-button{
-        padding: .5rem 2.5rem;
+        padding: .5rem 0;
         margin: 0;
-        align-self: flex-end;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 120px;
     }
     .long-link{
         margin: 0;
@@ -605,6 +609,9 @@ footer{
     .space-statistics {
         margin-bottom: 6rem;
         padding-top: 0%;
+    }
+    .space-statistics h2{
+        margin-top: 8rem;
     }
 
     .statistics {
@@ -679,21 +686,6 @@ footer{
         width: 30px;
         height: 30px;
     }
-
-
-/*
-    .brand {
-
-    }
-    .detail {
-        top: 83.5rem;
-        left: 35.5rem;
-    }
-
-    .custom {
-        top: 86rem;
-        left: 59.2rem;
-    } */
 
     /* --- Boost ---*/
     #boost{
