@@ -57,8 +57,9 @@ header a{
     padding: 1.25rem 2.5rem ;
 }
 
-.button:hover, .shortened-card a:hover{
+.button:hover, .copy-button:hover{
     background-color: #9BE3E2;
+    cursor: pointer;
 }
 .statisticsF{
     color: hsl(257, 7%, 63%);
@@ -257,14 +258,15 @@ input, button {
     padding: 1rem 0;
     border-radius: 0.50rem;
     background-color: #FFF;
-    z-index: 50;
+    z-index: 200;
+    position: relative;
 }
 .shortened-card hr{
     width: 99%;
     color: #BFBFBF;
     opacity: 25%;
 }
-.shortened-card a{
+.copy-button{
     border-radius: .5rem;
     padding: .75rem 2.5rem;
     margin-top: .5rem;
@@ -274,6 +276,8 @@ input, button {
 }
 .long-link{
     color: #35323E;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .short-link{
     color: #2ACFCF;
@@ -388,8 +392,8 @@ input, button {
 .gridtwo {
     position: relative;
     grid-column: 1;
-    grid-row: 3 / 5;
-    z-index: -10;
+    grid-row: 3 / 6;
+    z-index: 0;
   }
 /* --- Footer ---*/
 footer{
@@ -537,7 +541,6 @@ footer{
         padding-bottom: 1.5rem;
         border-radius: 10px;
         height:100px;
-        width: 75%;
         align-content: center;
     }
     .shorten_box{
@@ -573,19 +576,19 @@ footer{
     .shortened-card hr{
         display: none;
     }
-    .shortened-card a{
+    .copy-button{
         padding: .5rem 2.5rem;
         margin: 0;
         align-self: flex-end;
     }
     .long-link{
         margin: 0;
-        flex-basis: 45%;
+        flex-basis: 60%;
         margin-right: 1.5rem;
     }
     .short-link{
         margin: 0;
-        flex-basis: 43%;
+        flex-basis: 30%;
         text-align: right !important;
         margin-right: 1.5rem;
     }
