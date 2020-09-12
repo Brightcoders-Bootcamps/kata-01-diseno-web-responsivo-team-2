@@ -106,9 +106,9 @@ button.addEventListener("click", function(event){
 containerLinks.addEventListener("click", function(event){
     const element = event.target;
     const inputLink = element.parentNode.querySelector(".short-link");
-    console.log(element);
+    const copyButton = element.parentNode.querySelector(".copy-button");
     copyLink(inputLink.value);
 
-    element.value = "Copied!";
+    copyButton.value = "Copied!";
 });
 
