@@ -282,6 +282,7 @@ input,  button {
     border-radius: 0.50rem;
     padding-left:5%;
     width: 78%;
+    outline: none;
 }
 .shorten_button{
     /*margin-top: 1rem;*/
@@ -289,6 +290,7 @@ input,  button {
     border-radius: 0.50rem;
     padding: .5rem 1rem;
     padding: .75rem 0;
+    outline: none;
 }
 
 .shortened-card{
@@ -310,6 +312,8 @@ input,  button {
     border-radius: .5rem;
     padding: .75rem 2.5rem;
     margin-top: .5rem;
+    width: auto;
+    outline: none;
 }
 .m-shortened{
     margin: 0 1rem;
