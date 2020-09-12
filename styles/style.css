@@ -235,14 +235,36 @@ main {
 /* ----- Form ---- */
 .error{
     font-family: 'Poppins', sans-serif !important;
-    border: 3px solid red;
-    color: red;
+    border: 3px solid #f26263;
+    height: 47px;
+    color: #f26263;
+
 }
+.error::-webkit-input-placeholder { /* Safari y Chrome */
+    color: #f26263;
+ }
+  
+.error:-moz-placeholder { /* Firefox hasta v18 */
+    color: #f26263;;  
+ }
+  
+.error::-moz-placeholder {  /* Firefox 19+ */
+    color: #f26263; 
+ }
+  
+.error::-ms-input-placeholder {  /* IE 10+´*/
+    color: #f26263;  
+ }
 #labelform{
     visibility: hidden;
 }
 .is-visible{
     visibility: visible !important;
+    border:0px;
+    font-size: smaller;
+    padding-left:25px;
+    padding-top:60px;
+
 }
 
 
@@ -253,16 +275,16 @@ input,  button {
     align-items: center;
     width: 85%;
     border-style: none;
-    height: 48px;
+    height: 50px;
 }
 .shorten_box{
-    margin-bottom: 1rem;
+    /*margin-bottom: 1rem;*/
     border-radius: 0.50rem;
     padding-left:5%;
     width: 78%;
 }
 .shorten_button{
-    margin-top: 1rem;
+    /*margin-top: 1rem;*/
     vertical-align: center;
     border-radius: 0.50rem;
     padding: .5rem 1rem;
@@ -380,7 +402,7 @@ input,  button {
     background-size: 70%;
     background-repeat: no-repeat;
     background-position:right top;
-    height: 110px;
+    height: 130px;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border-radius: 10px;
@@ -554,9 +576,9 @@ footer{
     }
     .shorten_box{
         margin-bottom: 1rem;
-        width: 65%;
+        width: 85%;
         margin-left: 5%;
-        height: 60px;
+        height: 55px;
         border-radius: 0.50rem;
         font-family: 'Poppins', sans-serif;
         outline:none;
@@ -571,10 +593,22 @@ footer{
         height: 60px;
         border-radius: 0.50rem;
         outline:none;
+
     }
     form{
         display: flex;
         align-content: initial;
+    }
+    .input-label{
+        width:100%;
+    }
+    #labelform{
+        visibility: hidden;
+    }
+    .is-visible{
+        visibility: visible !important;
+        border:0px;
+        padding-left: 5%;
     }
     .shortened-card{
         flex-direction: row;
